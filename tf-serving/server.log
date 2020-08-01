@@ -1,0 +1,18 @@
+2020-08-01 13:36:51.790783: I tensorflow_serving/model_servers/server.cc:86] Building single TensorFlow model file config:  model_name: cifar10 model_base_path: /home/henrique/Documents/tensorflow-production/tf-serving/model
+2020-08-01 13:36:51.794919: I tensorflow_serving/model_servers/server_core.cc:464] Adding/updating models.
+2020-08-01 13:36:51.794999: I tensorflow_serving/model_servers/server_core.cc:575]  (Re-)adding model: cifar10
+2020-08-01 13:36:51.897614: I tensorflow_serving/core/basic_manager.cc:739] Successfully reserved resources to load servable {name: cifar10 version: 1}
+2020-08-01 13:36:51.897755: I tensorflow_serving/core/loader_harness.cc:66] Approving load for servable version {name: cifar10 version: 1}
+2020-08-01 13:36:51.897821: I tensorflow_serving/core/loader_harness.cc:74] Loading servable version {name: cifar10 version: 1}
+2020-08-01 13:36:51.899143: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:31] Reading SavedModel from: /home/henrique/Documents/tensorflow-production/tf-serving/model/1
+2020-08-01 13:36:51.916537: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:54] Reading meta graph with tags { serve }
+2020-08-01 13:36:51.916686: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:295] Reading SavedModel debug info (if present) from: /home/henrique/Documents/tensorflow-production/tf-serving/model/1
+2020-08-01 13:36:51.917752: I external/org_tensorflow/tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-08-01 13:36:52.029152: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:234] Restoring SavedModel bundle.
+2020-08-01 13:36:52.115873: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:183] Running initialization op on SavedModel bundle at path: /home/henrique/Documents/tensorflow-production/tf-serving/model/1
+2020-08-01 13:36:52.124436: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:364] SavedModel load for tags { serve }; Status: success: OK. Took 225291 microseconds.
+2020-08-01 13:36:52.125703: I tensorflow_serving/servables/tensorflow/saved_model_warmup.cc:105] No warmup data file found at /home/henrique/Documents/tensorflow-production/tf-serving/model/1/assets.extra/tf_serving_warmup_requests
+2020-08-01 13:36:52.126396: I tensorflow_serving/core/loader_harness.cc:87] Successfully loaded servable version {name: cifar10 version: 1}
+2020-08-01 13:36:52.134945: I tensorflow_serving/model_servers/server.cc:355] Running gRPC ModelServer at 0.0.0.0:8500 ...
+2020-08-01 13:36:52.139236: I tensorflow_serving/model_servers/server.cc:375] Exporting HTTP/REST API at:localhost:8501 ...
+[evhttp_server.cc : 238] NET_LOG: Entering the event loop ...
